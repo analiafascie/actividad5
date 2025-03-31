@@ -4,26 +4,26 @@ body {
     font-family: 'Boldonse', sans-serif;
     font-weight: 400;
     background-color: #F0F0F0;
-    background-image: url('lineas.jpg'); /* Imagen de fondo diferente para modo oscuro */
-    background-size: auto; /* Hace que la imagen cubra toda la pantalla */
-    background-repeat: repeat; /* Evita que se repita */
-    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
-        background-position: center; /* Centra la imagen */
+    background-image: url('lineas.jpg'); 
+    background-size: auto; 
+    background-repeat: repeat; 
+    background-attachment: fixed;
+    background-position: center; 
     color: #0a0727;
     transition: background-color 0.3s, color 0.3s;
 }
 
 
-/* Modo oscuro */
+
 body.dark-mode {
-    background-image: url('lineas2.jpg'); /* Imagen de fondo diferente para modo oscuro */
+    background-image: url('lineas2.jpg'); 
     background-color: #15240f;
     color: #FFFFFF;
     font-family: 'Boldonse', sans-serif;
     font-weight: 400;
 }
 
-/* Menú de navegación */
+
 header {
     background-color: rgba(255, 255, 255, 0.8);
     padding: 10px; /* Padding aplicado */
@@ -60,7 +60,7 @@ nav ul li button {
     font-size: 1.5em;
 }
 
-/* Estilo del título principal */
+
 h1 {
     font-family: "Mrs Sheppards", cursive;
     font-size: 190px;
@@ -79,13 +79,13 @@ body.dark-mode h1 {
 }
 
 body.dark-mode h2 {
-    color: #EDE6D5; /* Color claro para modo oscuro */
+    color: #EDE6D5;
     font-family: 'Boldonse', sans-serif;
     font-weight: 400;
 }
 
 body.dark-mode h3 {
-    color: #EDE6D5; /* Color claro para modo oscuro */
+    color: #EDE6D5; 
     font-family: 'Boldonse', sans-serif;
     font-weight: 400;
 }
@@ -112,9 +112,9 @@ h3 {
 
   
 
-/* Formulario */
+
 .registro {
-    background-color: rgba(255, 255, 255, 0.85); /* Fondo suave */
+    background-color: rgba(255, 255, 255, 0.85); 
     padding: 30px;
     margin: 30px auto;
     width: 50%;
@@ -145,7 +145,7 @@ form input, form select {
     border-radius: 5px;
 }
 
-/* Botón de envío */
+
 form button {
     width: 100%;
     padding: 10px;
