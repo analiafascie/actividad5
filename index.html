@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Center</title>
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;700&display=swap" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mrs+Sheppards&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Menú de navegación -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Inicio</a></li>
+                <li><a href="">Planes</a></li>
+                <li><a href="">Horarios</a></li>
+                <li><a href="">Contacto</a></li>
+                <li><button id="theme-toggle" onclick="toggleTheme()">🌞</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección principal -->
+    <main>
+        <section class="bienvenida">
+            <h1>Sport Center</h1>
+            <h2>Entrená con proposito.</h2>
+            <h3>Empezá, nosotros tenemos todo para seguirte.</h3>
+        </section>
+
+        <!-- Formulario de Registro -->
+        <section class="registro">
+            <h2>Registro de Usuarios</h2>
+            <form action="#" method="post">
+                <label for="nombre">Nombre</label>    
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="plan">Tipo de Plan</label>
+                <select id="plan" name="plan" required>
+                    <option value="basico">Básico</option>
+                    <option value="premium">Premium</option>
+                    <option value="full">Full</option>
+                </select>
+
+                <label for="horarios">Horarios</label>
+                <select id="horario" name="horario" required>
+                    <option value="" disabled selected>Seleccionar Horario</option>
+                    <option value="08:00">08:00</option>
+                    <option value="09:00">09:00</option>
+                    <option value="10:00">10:00</option>
+                    <option value="11:00">11:00</option>
+                    <option value="12:00">12:00</option>
+                    <option value="13:00">13:00</option>
+                    <option value="14:00">14:00</option>
+                    <option value="15:00">15:00</option>
+                    <option value="16:00">16:00</option>
+                    <option value="17:00">17:00</option>
+                    <option value="18:00">18:00</option>
+                    <option value="19:00">19:00</option>
+                </select>
+                
+
+                <button type="submit">Registrarse</button>
+            </form>
+        </section>
+    </main>
+    
+    <!-- JavaScript para cambiar tema -->
+    <script>
+        function toggleTheme() {
+            const body = document.body;
+            const button = document.getElementById('theme-toggle');
+            body.classList.toggle('dark-mode');
+            
+            if (body.classList.contains('dark-mode')) {
+                button.innerHTML = '🌜';
+            } else {
+                button.innerHTML = '🌞';
+            }
+        }
+    </script>
+</body>
+</html>

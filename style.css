@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+    background-color: #F0F0F0;
+    background-image: url('lineas.jpg'); /* Imagen de fondo diferente para modo oscuro */
+    background-size: auto; /* Hace que la imagen cubra toda la pantalla */
+    background-repeat: repeat; /* Evita que se repita */
+    background-attachment: fixed; /* Hace que la imagen se mantenga fija al hacer scroll */
+        background-position: center; /* Centra la imagen */
+    color: #0a0727;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+/* Modo oscuro */
+body.dark-mode {
+    background-image: url('lineas2.jpg'); /* Imagen de fondo diferente para modo oscuro */
+    background-color: #15240f;
+    color: #FFFFFF;
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+}
+
+/* Menú de navegación */
+header {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px; /* Padding aplicado */
+    position: relative;
+}
+
+body.dark-mode header {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #0a0727;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 500;
+}
+
+body.dark-mode nav ul li a {
+    color: #EDE6D5;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5em;
+}
+
+/* Estilo del título principal */
+h1 {
+    font-family: "Mrs Sheppards", cursive;
+    font-size: 190px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #0a0727;
+}
+
+
+body.dark-mode h1 {
+    color: #EDE6D5;
+}
+
+body.dark-mode h2 {
+    color: #EDE6D5; /* Color claro para modo oscuro */
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+}
+
+body.dark-mode h3 {
+    color: #EDE6D5; /* Color claro para modo oscuro */
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-left: auto;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #0a0727;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: 200;
+    margin-left: auto;
+    text-align: center;
+    padding-left: 20px;
+    margin-top: 20px;
+    color: #0a0727;
+}
+
+  
+
+/* Formulario */
+.registro {
+    background-color: rgba(255, 255, 255, 0.85); /* Fondo suave */
+    padding: 30px;
+    margin: 30px auto;
+    width: 50%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .registro {
+    background-color: rgba(30, 30, 30, 0.85);
+    color: #EDE6D5;
+    font-family: 'Boldonse', sans-serif;
+    font-weight: 400;
+}
+
+.registro h2 {
+    text-align: center;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-family: 'Boldonse', sans-serif;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Botón de envío */
+form button {
+    width: 100%;
+    padding: 10px;
+    font-family: 'Boldonse', sans-serif;
+    background-color: #0a0727;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #EDE6D5;
+}
